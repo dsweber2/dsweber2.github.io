@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/atom.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-26T00:13:39-07:00</updated><id>/atom.xml</id><title type="html">Countable Smorgasbord</title><subtitle>most things are broken most of the time</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;false}</name></author><entry><title type="html">A not so repugnant conclusion</title><link href="/rationality/altruism/theRepugnant-conclusion/" rel="alternate" type="text/html" title="A not so repugnant conclusion" /><published>2019-07-01T00:00:00-07:00</published><updated>2019-07-01T00:00:00-07:00</updated><id>/rationality/altruism/theRepugnant-conclusion</id><content type="html" xml:base="/rationality/altruism/theRepugnant-conclusion/">&lt;p&gt;Let’s consider a utilitarian value system with equal weights for all people, a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/atom.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-07T15:33:53-07:00</updated><id>/atom.xml</id><title type="html">Countable Smorgasbord</title><subtitle>most things are broken most of the time</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;false}</name></author><entry><title type="html">What’s all this nonsense then?</title><link href="/opening/" rel="alternate" type="text/html" title="What's all this nonsense then?" /><published>2019-07-26T00:17:24-07:00</published><updated>2019-07-26T00:17:24-07:00</updated><id>/opening</id><content type="html" xml:base="/opening/">&lt;p&gt;Principally, a place for me to scribble ideas, ideally in a way that is
+accessible and useful to others. Generally, I’ll talk about Effective Altruism
+related topics, random bits of math and math puzzles, some data science
+questions, possibly social science commentary from time to time.&lt;/p&gt;
+
+&lt;p&gt;Metacalculus&lt;/p&gt;
+
+&lt;p&gt;More intentionally, there’s a project on summarizing mathematical theories deep
+neural networks, best found via the &lt;a href=&quot;/tags/&quot;&gt;tag dnn theory&lt;/a&gt;. Without further ado:&lt;/p&gt;
+
+&lt;h1 id=&quot;deep-neural-networks-what-do-they-know-do-they-know-stuff-lets-find-out&quot;&gt;Deep Neural networks: What do they know? Do they know stuff? Let’s find out!&lt;/h1&gt;
+&lt;p&gt;This is a broad subject which simultaneously has surprisingly old roots&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and
+strikingly open questions. At the root of this is that the mathematical
+structures of deep neural networks are so simple: stochastic gradient descent
+(maybe with some memory), composition of &lt;em&gt;very&lt;/em&gt; simple nonlinearities, and some
+linear operators with some simple structures. This combination means
+that there are parallels to be made with many fields of mathematics. Not all of
+these end up telling us something useful, although knowing which is which is a
+difficult question.&lt;/p&gt;
+
+&lt;p&gt;Roughly, you can expect this blog to give an opinionated and not always expert
+take on many papers on the subject, presented in a fairly random fashion. There
+are, however, summary pages that will give sub-abstract level summaries of the
+works linking them together. Expect these pages (and this one) to change fairly
+frequently.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Approximation Theory&lt;/li&gt;
+  &lt;li&gt;Learning Theory&lt;/li&gt;
+  &lt;li&gt;Harmonic Analysis&lt;/li&gt;
+  &lt;li&gt;Combinatorial&lt;/li&gt;
+  &lt;li&gt;Tensor factorization&lt;/li&gt;
+  &lt;li&gt;(Stochastic) differential equations&lt;/li&gt;
+  &lt;li&gt;Matrix Analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One thing you can expect this blog to &lt;em&gt;not&lt;/em&gt; do is try to teach you how to do
+deep learning. There are a billion and one resources out there already. Just go
+read distill if that’s what you’re interested in. (TODO: add a link to that
+medium article)&lt;/p&gt;
+&lt;h2 id=&quot;what-was-known-an-insultingly-brief-tour&quot;&gt;What was known: an insultingly brief tour&lt;/h2&gt;
+
+&lt;p&gt;Most&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; of the existing discussion before the current AI summer was focused on
+approximation theory and learning theory. Broadly, approximation theory
+approaches a class of functions, asks, &lt;q&gt;how well can you express this
+function with these budget constraints?&lt;/q&gt; and tends to call it a
+day. Obviously that’s not quite enough, since we need to &lt;em&gt;find&lt;/em&gt; that function,
+but it’s certainly a minimal requirement for an effective function class, and
+it allowed us to conclude that &lt;em&gt;at least&lt;/em&gt; one hidden layer is necessary. There
+are some interesting modern results that get into examining the trade-offs
+between depth and width, which you can read more about
+&lt;a href=&quot;blog/approximationTheory&quot;&gt;here&lt;/a&gt; (think of that as a meta post which will
+update whenever I add a post in that series).&lt;/p&gt;
+
+&lt;p&gt;Learning theory, on the other hand, is concerned with making sure . Ideally,
+these are the sorts of guarantees you want very broad theory to be able to give
+you. One problem: these bounds are.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-do-we-go-now&quot;&gt;Where do we go now?&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_representation_theorem&quot;&gt;Hilbert’s thirteenth
+problem&lt;/a&gt;
+from the turn of the &lt;em&gt;18^th&lt;/em&gt; century can actually be viewed as the sort
+of recursive nonlinearity that is at the heart of neural networks. As with
+many things, the link is more tenuous than you might like: it tells us that
+any multivariate function can actually be written as a two layer
+&lt;q&gt;network&lt;/q&gt; where we get to choose the functions. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;there are other perspectives, such as the information geometry of neural
+networks that were floating around at the time, but they weren’t the most
+prominent or the ones that got passed on. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;picture&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil, &quot;links&quot;=&gt;false}</name></author><summary type="html">Principally, a place for me to scribble ideas, ideally in a way that is accessible and useful to others. Generally, I’ll talk about Effective Altruism related topics, random bits of math and math puzzles, some data science questions, possibly social science commentary from time to time.</summary></entry><entry><title type="html">A not so repugnant conclusion</title><link href="/rationality/altruism/theRepugnant-conclusion/" rel="alternate" type="text/html" title="A not so repugnant conclusion" /><published>2019-07-01T00:00:00-07:00</published><updated>2019-07-01T00:00:00-07:00</updated><id>/rationality/altruism/theRepugnant-conclusion</id><content type="html" xml:base="/rationality/altruism/theRepugnant-conclusion/">&lt;p&gt;Let’s consider a utilitarian value system with equal weights for all people, a
 single resource with a fixed amount &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;R&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, and the same utility function for all
 people. It is a relatively well known fact that people’s reported happiness
 scales with the logaritm of the wealth available to them. If we’re looking to

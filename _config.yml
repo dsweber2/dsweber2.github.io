@@ -21,7 +21,7 @@ description: "most things are broken most of the time"
 #description: "trying to not be lost using math, while not getting lost in the math either"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "images/Ouroboros.png" # path of site logo, e.g. "/images/logo.png"
+logo: "images/laughing_man_inkscape_black_White.svg" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: 187
@@ -35,7 +35,7 @@ google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  username: dsweber21 # site's Twitter username, e.g. "mmistakes"
 
 # Liquid
 liquid:
@@ -115,7 +115,7 @@ footer_links:
     url: https://www.goodreads.com/review/list/53990322
     icon: fab fa-goodreads
   - title: Twitter
-    url: https://twitter.com/wavebidder
+    url: https://twitter.com/dsweber21
     icon: fab fa-twitter-square
   - title: Feed
     url: atom.xml

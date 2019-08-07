@@ -8,43 +8,31 @@ collection: research
 ---
 
 <figure style="width: 300px" class="align-right">
-  <img src="{{ '/images/obligatoryHiking.jpg' | absolute_url }}" alt="">
-  <figcaption>Obligatory Hiking Picture, Muir Woods</figcaption>
+	<img src="{{ '/images/obligatoryHiking.jpg' | absolute_url }}" alt="">
+	<figcaption>Obligatory Hiking Picture, Muir Woods</figcaption>
 </figure> 
 
 
 I am a graduate student at UC Davis working with professor [Naoki
 Saito](https://www.math.ucdavis.edu/~saito/). My undergraduate was at UW
-Madison, where I studied mathematics, computer science, and physics. My general
-research interests at this point are
+Madison, where I studied mathematics, computer science, and physics. I grew up
+in Rochester, Minnesota (effectively northern Iowa). My general research
+interests at this point are
 * Machine Learning
 * Harmonic Analysis
 * Optimization
 * Mathematical Neuroscience
 
-Currently, I am focused on understanding why Convolutional Neural Networks work
-so well, specifically from the perspective of the scattering transform.
+Currently, I am focused on applying formalizations of neural networks to a well
+simulated sonar problem and understanding why that works, as well as a hefty
+side interest in understanding why Convolutional Neural Networks work so well
+in general.
+
+Less formally, I try to think about [how we can best use our time to do
+good](https://www.effectivealtruism.org/articles/introduction-to-effective-altruism/
+"Doing good is really hard. I make no claims to be doing anything particularly
+extrodinary."), play board games (current favorite is hanabi), eat the
+internet, and occasionally [write here](/blog/).
 
 
-# Papers
-
-* Cole Graham, Tau Shean Lim, Andrew Ma, David Weber. 2018. [*An Existence
-  Criterion for Transition Fronts in Compactly-Perturbed Ignition
-  Reactions*](https://doi.org/10.1088/1361-6544/aa952c). Nonlinearity 31
-  (2). IOP Publishing:651. ([ArXiv Version](https://arxiv.org/abs/1705.03563))
-
-* [*Underwater object classification using scattering transform of sonar
-  signals*](https://doi.org/10.1117/12.2272497), Naoki Saito & David Weber,
-  Proc. SPIE 8138, Wavelets and Sparsity XVII, 103940K ([arXiv
-  version](https://arxiv.org/abs/1707.03133)).
-
-
-# Talks
-
-* [Mathematics of Deep Learning Oberwolfach Seminar, Fall
-	2018](oberwolfach_talk1.pdf) [^1]
-* [Student Run Applied Math Seminar, Winter 2016](appliedmathtalk.pdf) [^1]
-* [Davis Math Talk, Spring 2016](davismathtalk.pdf) [^1]
-
-[^1]: The dates on the cover pages of these talks are fictitious. Any
-    identification with actual talk dates involved is entirely coincidental.
+To contact me, feel free to shoot me an email at dsweber@math.ucdavis.edu.
