@@ -43,10 +43,12 @@ send people off to other planets. One needs to be careful about
 
 # the role of negatives
 
-Something being bad is often worse for people than things being good. The
-actual level of resources that people get is both never equally distributed,
-or constant, so a world just above the zero line, is also one where there are
-significantly many people who have crossed the threshold
+People weigh losses more heavily than they weigh an objectively similar gain;
+the descriptive psychology of this is known as [Cumulative prospect
+theory](https://en.wikipedia.org/wiki/Cumulative_prospect_theory). The actual
+level of resources that people get is both never equally distributed, or
+constant, so a world just above the zero line, is also one where there are
+significantly many people who have crossed the threshold.
 
 
 [someone seems to have thought of this](https://www.lesswrong.com/posts/Zgwy2QRgYBSrMWDMQ/logarithms-and-total-utilitarianism)

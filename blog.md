@@ -2,7 +2,7 @@
 layout: home
 entries_layout: list
 title: The Countable Smorgasbord
-
+permalink: /blog/
 ---
 
 [Categories](/categories/)
