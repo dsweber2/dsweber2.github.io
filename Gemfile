@@ -13,6 +13,7 @@ group :jekyll_plugins do
    gem "jemoji"
    gem "jekyll-redirect-from"
    gem "jekyll-katex"
+   
 end
 
 gemspec
