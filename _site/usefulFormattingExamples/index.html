@@ -20,9 +20,9 @@
 
   
     
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Post: Video (YouTube) | Countable Smorgasbord</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Post: Video (YouTube)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="most things are broken most of the time" />
@@ -32,11 +32,9 @@
 <meta property="og:site_name" content="Countable Smorgasbord" />
 <meta property="og:image" content="/images/so-simple-sample-image-3.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="/images/so-simple-sample-image-3.jpg" />
-<meta property="twitter:title" content="Post: Video (YouTube)" />
 <meta name="twitter:site" content="@dsweber21" />
 <script type="application/ld+json">
-{"dateModified":"2017-03-09T10:01:27-08:00","image":{"thumbnail":"/images/so-simple-sample-image-3-400x200.jpg","caption":"Photo from [WeGraphics](http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/)","url":"/images/so-simple-sample-image-3.jpg","@type":"imageObject"},"@type":"WebPage","headline":"Post: Video (YouTube)","url":"/usefulFormattingExamples/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/laughing_man_inkscape_black_White.svg"}},"description":"most things are broken most of the time","@context":"https://schema.org"}</script>
+{"description":"most things are broken most of the time","@type":"WebPage","image":{"thumbnail":"/images/so-simple-sample-image-3-400x200.jpg","caption":"Photo from [WeGraphics](http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/)","url":"/images/so-simple-sample-image-3.jpg","@type":"imageObject"},"url":"/usefulFormattingExamples/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/laughing_man_inkscape_black_White.svg"}},"headline":"Post: Video (YouTube)","dateModified":"2017-03-09T10:01:27-08:00","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -217,13 +215,13 @@ end
 
 </code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-julia" data-lang="julia"><span class="k">function</span><span class="nf"> fit_mle</span><span class="x">(</span><span class="n">wef</span><span class="o">::</span><span class="n">con_powerlaw</span><span class="x">,</span> <span class="n">x</span><span class="o">::</span><span class="kt">AbstractArray</span><span class="x">{</span><span class="n">T</span><span class="x">})</span> <span class="k">where</span> <span class="n">T</span><span class="o">&lt;:</span> <span class="kt">Real</span>
+<figure class="highlight"><pre><code class="language-julia" data-lang="julia"><span class="k">function</span><span class="nf"> fit_mle</span><span class="x">(</span><span class="n">wef</span><span class="o">::</span><span class="n">con_powerlaw</span><span class="x">,</span> <span class="n">x</span><span class="o">::</span><span class="n">AbstractArray</span><span class="x">{</span><span class="n">T</span><span class="x">})</span> <span class="n">where</span> <span class="n">T</span><span class="o">&lt;:</span> <span class="n">Real</span>
     <span class="n">θ</span> <span class="o">=</span> <span class="n">minimum</span><span class="x">(</span><span class="n">x</span><span class="x">)</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="n">length</span><span class="x">(</span><span class="n">x</span><span class="x">)</span>
     <span class="n">lθ</span> <span class="o">=</span> <span class="n">log</span><span class="x">(</span><span class="n">θ</span><span class="x">)</span>
     <span class="n">temp1</span> <span class="o">=</span> <span class="n">zero</span><span class="x">(</span><span class="n">T</span><span class="x">)</span>
-    <span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="n">n</span>
+    <span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="x">:</span><span class="n">n</span>
         <span class="n">temp1</span> <span class="o">+=</span> <span class="n">log</span><span class="x">(</span><span class="n">x</span><span class="x">[</span><span class="n">i</span><span class="x">])</span> <span class="o">-</span> <span class="n">lθ</span>
     <span class="k">end</span>
     <span class="n">α</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">+</span><span class="n">n</span><span class="o">*</span><span class="x">(</span><span class="n">temp1</span><span class="x">)</span><span class="o">^</span><span class="x">(</span><span class="o">-</span><span class="mf">1.0</span><span class="x">)</span>
