@@ -38,5 +38,5 @@ internet](https://feedly.com/i/welcome), and occasionally [write here](/blog/).
 
 
 To contact me, feel free to shoot me an email at dsweber@math.ucdavis.edu. Or
-shoot me a message on twitter. Or whisper softly to a passing blue jay of the
-passing of the old gods.
+shoot me a message on twitter. Or whisper softly to a passing blue jay about
+the passing of the old gods.
