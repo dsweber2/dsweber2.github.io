@@ -31,7 +31,8 @@ in general.
 Less formally, I try to think about [how we can best use our time to do
 good](https://www.effectivealtruism.org/articles/introduction-to-effective-altruism/
 "Doing good is really hard. I make no claims to be doing anything particularly
-extrodinary."), play
+extrodinary."), [write more julia than I probably need
+to](https://github.com/dsweber2), play
 [board](https://boardgamegeek.com/boardgame/272743/hanabi-deluxe-ii)/[video](https://www.reddit.com/r/factorio/)/[tabletop](https://www.reddit.com/r/rpg/)
 games, attempt to read broadly, generally [eat the
 internet](https://feedly.com/i/welcome), and occasionally [write here](/blog/).

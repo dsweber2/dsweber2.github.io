@@ -3,42 +3,52 @@ title: Blogroll
 layout: page
 permalink: /blogroll/
 ---
+{% katexmm %}
 
 
 There is far too much quality produced out there for me to name everything I
 like. If you're somewhat crazy, here's [my feedly
-opml](feedly-2019-08-07.opml). Otherwise, a sample biased towards the better
+opml](/feedly-2019-08-07.opml). Otherwise, a sample biased towards the better
 sources:
 
 
-# Mathematically Precise Blogs and other writing
-* [Distill](https://distill.pub/)
+# Mathematics, Statistics and ML
 * [Statistical Modeling, Causual Inference, and Social
   Science](https://statmodeling.stat.columbia.edu/): See the name. Andrew
 	  Gelman and friends.
-* [The Endeavor](https://www.johndcook.com/blog/)
+* [The Endeavor](https://www.johndcook.com/blog/): generally short posts on
+		computational math.
 * [Computational Complexity](https://blog.computationalcomplexity.org/)
 * [What's New](https://terrytao.wordpress.com/): Better math writing than most textbooks
 * [Nuit Blanche](https://nuit-blanche.blogspot.com/) more of a collection of
 		links than anything, but they're usually good.
 * [Gödel's Lost Letter and P=NP](https://rjlipton.wordpress.com/)
-* [Quomodocumque](https://quomodocumque.wordpress.com/)
+* [Quomodocumque](https://quomodocumque.wordpress.com/): Madisonian algebraic
+		geometer who writes well on many topics
+* [Distill](https://distill.pub/): surveys of the state of neural networks
+* [Arxiv Sanity](http://www.arxiv-sanity.com/): find the signal in the
+		noise. Or at least the hype
 
 
 
 # Less-wrong/Effective Altruism adjacent
 * [Slate Star Codex](https://slatestarcodex.com/): needs no introduction
-* [80,000 Hours]
-* [Metaculus](https://www.metaculus.com/ "futuresight"): help predict the
-  future, learn to think clearly
+* [80,000 Hours](https://80000hours.org/): how to career
+* [Less Wrong](https://www.lesswrong.com/):
+* [Metaculus](https://www.metaculus.com/ "futuresight"): a Tetlockian adventure
+	in rigorous guessing
 
-# Broader Blogosphere
+# Broader Blogosphere and Beyond
 * [Scholar's Stage](https://scholars-stage.blogspot.com/): A historians' view of
   China, behavioral science, and strategic thought
 * [Gene Expression](https://www.gnxp.com/): Or Razib's writing in general. He's
   pretty insightful on world history and genetics.
+* [Schneier on Security](https://www.schneier.com/): $\leftarrow$
 * [Statechery](https://stratechery.com/): In depth analysis of the shape of the
   tech market
+* [Abandoned Footnotes](http://abandonedfootnotes.blogspot.com/): 
+* [r/AskHistorians](http://abandonedfootnotes.blogspot.com/): the most rigorous
+	part of reddit
 
 # Web comics
 
@@ -65,3 +75,4 @@ sources:
 * [Saturday Morning Breakfast Cereal](https://www.smbc-comics.com/): It never
   ends. How does he do it?
 
+{% endkatexmm %}
