@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e # halt on error
+bundle exec jekyll build
+touch ./_site/.nojekyll
