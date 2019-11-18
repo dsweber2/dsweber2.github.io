@@ -1,0 +1,17 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build_and_deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the site & deploy to github pages
+      env:
+        GITHUB_TOKEN: ${{  GITHUB_TOKEN  }}
+        GITHUB_REPOSITORY: ${{  GITHUB_REPOSITORY  }}
+        GITHUB_ACTOR: ${{  secrets.GITHUB_ACTOR  }}
+      uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
