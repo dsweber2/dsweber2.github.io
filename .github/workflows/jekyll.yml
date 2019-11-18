@@ -1,17 +1,33 @@
-name: Jekyll site CI
+name: Jekyll Build & Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
-  build_and_deploy:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build the site & deploy to github pages
+    - name: Build jekyll/builder
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Commit to Master
+      uses: github-actions-x/commit@v2.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'master'
+        commit-message: '[ Generate Jekyll Website ]'
+        force-add: 'true'
+    - name: Deploy to gh-pages
+      uses: docker://peaceiris/gh-pages:v2.5.0
       env:
-        GITHUB_TOKEN: ${{  secrets.GITHUB_TOKEN  }}
-        GITHUB_REPOSITORY: ${{  secrets.GITHUB_REPOSITORY  }}
-        GITHUB_ACTOR: ${{  secrets.GITHUB_ACTOR  }}
-      uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./_site
