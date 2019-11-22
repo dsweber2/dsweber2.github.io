@@ -95,6 +95,9 @@ defaults:
       layout: post
       share: true
 
+# for jekyll-deploy-gh-pages
+destination: ./build
+
 # Site Author
 author:
   name: 
